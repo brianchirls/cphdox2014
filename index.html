@@ -2,10 +2,10 @@
 <html>
 	<head>
 		<title>Brian Chirls - CPH:DOX Community Building</title>
-    <meta charset="utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE-edge"/>
+		<meta charset="utf-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE-edge"/>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
 		<style type="text/css">
 			@import url(//fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
 			@import url(//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
@@ -105,7 +105,11 @@ class: middle
 - [github.com/povdocs](http://github.com/povdocs)
 
 		</textarea>
-		<script src="//gnab.github.io/remark/downloads/remark-latest.min.js">
+		<script src="//gnab.github.io/remark/downloads/remark-latest.min.js"></script>
+		<script>
+		if (!window.remark) {
+			document.write('<script ' + 'src="js/remark-latest.min.js"><' + '/script>');
+		}
 		</script>
 		<script>
 			var slideshow = remark.create();
